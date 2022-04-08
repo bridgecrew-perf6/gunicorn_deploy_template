@@ -1,6 +1,6 @@
 # Gunicorn systemd configuration
 
-Put this files to ```/etc/systemd/system/```.
+Put ```gunicorn.socket``` and ```gunicorn.service``` to ```/etc/systemd/system/```.
 
 Add user to group ```www-data```
 
