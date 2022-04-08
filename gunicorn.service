@@ -4,7 +4,7 @@ Requires=gunicorn.socket
 After=network.target
 
 [Service]
-User=sammy
+User=django
 Group=www-data
 WorkingDirectory=/home/django/matreshka_doc
 ExecStart=/home/django/matreshka_doc/venv/bin/gunicorn \
