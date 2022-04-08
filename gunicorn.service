@@ -6,12 +6,12 @@ After=network.target
 [Service]
 User=django
 Group=www-data
-WorkingDirectory=/home/django/matreshka_doc
-ExecStart=/home/django/matreshka_doc/venv/bin/gunicorn \
+WorkingDirectory=/home/django/myprojectdir
+ExecStart=/home/django/myprojectdir/myprojectenv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          matreshka_doc.wsgi:application
+          myproject.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
